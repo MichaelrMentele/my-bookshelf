@@ -1,0 +1,1 @@
+var BookConstructor = Backbone.Model.extend({});
