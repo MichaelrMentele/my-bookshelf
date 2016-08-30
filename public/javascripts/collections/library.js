@@ -1,3 +1,3 @@
-var LibraryConstructor = Backbone.Collection.extend({
-
+var Library = Backbone.Collection.extend({
+	model: Book,
 });

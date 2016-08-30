@@ -2,13 +2,48 @@
 <html>
 <head>
 	<title>Book Manager</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
 	<script src="javascripts/vendor/all.js"></script>
 </head>
 <body>
-
+	<div id="books">
+		<form id="addBook" action="#">
+        <ul>
+        	<li>
+            <label for="coverImage">CoverImage: </label><input id="coverImage" type="file" />
+          </li>
+          <li>
+            <label for="title">Title: </label><input id="title" type="text" />
+          </li>
+          <li>
+            <label for="author">Author: </label><input id="author" type="text" />
+          </li>
+          <li>
+            <label for="releaseDate">Release date: </label><input id="releaseDate" type="text" />
+          </li>
+          <li>
+            <label for="keywords">Keywords: </label><input id="keywords" type="text" />
+            <button id="add">Add</button>
+          </li>
+        </ul>
+    </form>
+   
+  </div>
 </body>
-<script type="text/x-handlebars">
-	
+<script id="bookTemplate" type="text/x-handlebars">
+    <img src="{{coverImage}}"/>
+    <ul>
+        <li>{{ title }}</li>
+        <li>{{ author }}</li>
+        <li>{{ releaseDate }}</li>
+        <li>{{ keywords }}</li>
+    </ul>
+
+    <button class="delete">Delete</button>
 </script>
+<script src="javascripts/models/book.js"></script>
+<script src="javascripts/collections/library.js"></script>
+<script src="javascripts/views/book.js"></script>
+<script src="javascripts/views/bookshelf.js"></script>
 <script src="javascripts/app.js"></script>
 </html>

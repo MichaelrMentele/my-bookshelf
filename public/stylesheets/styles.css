@@ -1,0 +1,79 @@
+body {
+    background-color: #eee;
+}
+
+#books {
+    overflow: auto;
+}
+
+.bookContainer {
+    outline: 1px solid #aaa;
+    width: 350px;
+    height: 130px;
+    background-color: #fff;
+    float: left;
+    margin: 5px;
+}
+
+.bookContainer img {
+    float: left;
+    width: 70px;
+    height: 117px;
+    margin: 10px;
+}
+
+.bookContainer ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.bookContainer button {
+    float: right;
+    margin: 10px;
+}
+
+#addBook { 
+    overflow: auto
+}
+#addBook ul {
+    list-style: none;
+}
+
+#addBook label {
+    width: 100px;
+    margin-right: 20px;
+    text-align: right;
+    line-height: 25px;
+}
+
+#addBook label, #addBook input{
+    display: block;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#addBook label[for="title"], #addBook label[for="releaseDate"] {
+    clear: both;
+}
+
+#addBook button {
+    display: block;
+    width: 100px;
+    margin: 0px 0px 20px 120px;
+    clear: both;
+    float: left;
+}
+
+#addBook div {
+    width: 550px;
+}
+
+#addBook div:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
